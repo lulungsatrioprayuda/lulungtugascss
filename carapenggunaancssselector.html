@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar penggunaan css selector</title>
+    <style type="text/css">
+
+    h2 , h3 {
+        color: red;
+    }
+    /*Maksudnya adalah tag strong yang ada di dalam tag p*/
+    p strong {
+        color: red;
+    }
+     h2.judul , .paragraf {
+         text-align: center;
+     }
+     #belajar_html ,p#belajar_css , h3.judul_subheader {
+         font-size: 15pt;
+     }
+    </style>
+</head>
+<body>
+    <h2 class="judul">Belajar</h2>
+    <!-- strong di gunakan untuk mempertebal suatu huruf--> <!--tag "em" di gunakan untuk mebuat tulisan yang ada di dalam tag em ter sebut menjadi miring-->
+    <p>ini <strong> Adalah</strong> Sebuah <em>Paragraf</em> </p>
+    <!--tag p yang memiliki class paragraf dan id unik yang bernama belajar_ html-->
+    <p id="belajar_html" class="paragraf">Saya sedang belajar html dari 
+        <a href="#">jti.polije</a>
+        akan terbuka pada tab baru
+    </p>
+    <p id="belajar_css" class="paragraf">Saya sedangBelajar css, mohon jangan di ganggu</p>
+    <br />
+    <h3 class="judul_subheader"> Daftar Belanjaan</h3>
+    <ol>
+        <li><em>Minyak Goreng</em></li>
+        <li>Sabun Mandi</li>
+        <li>Shampoo</li>
+        <li>Obat nyamuk</li>
+    </ol>
+</body>
+</html>

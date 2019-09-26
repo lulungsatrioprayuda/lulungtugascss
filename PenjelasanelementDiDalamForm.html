@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+<form action="prosesdata.php" method="POST">
+    ... Isi Form ...
+</form>
+<!--Tempat box yang di gunakan untuk menginputkan berupa data pendek-->
+<p> <b> Tempat Masukan Text</b></p>
+<input type="text">
+<br>
+<!--Input yang bertipe password ini dalam tampilan text namun data yang di masukkan akan di sensor atau tidak terlihat-->
+<p><b>Tempat Memasukan Data Rahasia</b></p>
+<input type="password">
+<br>
+<!--Tempat memasukan data dengan cara memilih suatu objek yang setiap objeknya memiliki Nilai data masing masing-->
+<p><b>  Pilih Salah Satu </b></p>
+<input type="checkbox" name="Lulung" id="Lulung1">
+<br>
+<!--Jenis inputan ini biasanya di gunakan untuk memilih suatu genre jenis kelamin atau yang lainnya yang hanya bisa di isi oleh 1 data dari sekian banyak pilihan-->
+<p><b>Pilih Genre Anda</b></p>
+<input type="radio" name="oleng" id="olang">
+<br>
+<!--Digunakan untuk Memasukan tipe data text tetapi tipe data textnya lebih panjang dan lebih banyak baris dari pada input text-->
+<p><b>Tulis Email</b></p>
+<textarea name="Masukan"  cols="50" rows="20">
+    Silahkan masukan pesan anda
+</textarea>
+<br>
+<!--Fungsinya sama seperti input radio atau checkb0x,yang berbeda hanyalah tempat untuk mengisi datanya yaitu menggunakan fitur seperti input text biasa,tetapi perbedaanya input select ini-
+memiliki pilihan di dalam texboxnya dan hanya bisa mengisi data sesuai dengan pilihan yang tersedia-->
+<select>
+    <option>Pilihan1</option>
+    <option>Pilihan2</option>
+    <option value="Pilihan ketiga" selected>Pilihan3</option>
+</select>
+<br>
+
+<!--Inputan ini sama seperti biasnya Input submit yaitu suatu tombol atau suatu objek yang di gunakan untuk memasukan data dari semua jenis tag inputan mulai dari input text sampai input radio -->
+<p><b>Input Submit</b></p>
+<input type="submit" value="masukan">
+<br>
+<input type="text" name="username"> <input type="text" name="email">
+</body>
+</html>

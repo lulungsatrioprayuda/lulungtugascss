@@ -1,0 +1,55 @@
+/*contoh komen*/
+/*Css Memilih kelas atau elemen di eader dengancara di beri pagar # khusus untuk suatu tag di html*/
+#header {
+    border: 1px solid red;
+    }
+    #menu {
+    border: 1px solid blue;
+    }
+    #menu li, #sidebar li {
+    list-style: none;
+    }
+    #content {
+    width: 59%;
+    float: left;
+    border: 1px solid black;
+
+    }
+    #sidebar {
+    border: 1px solid black;
+    float: left;
+    width: 40%;
+    }
+    #footer {
+    width: 100%;
+    border: 1px solid black;
+    float: left;
+    }
+
+body {
+text-align: center;
+}
+#header {
+border: 1px solid red;
+}
+#menu {
+border: 1px solid blueviolet;
+}
+#menu li, #sidebar li {
+list-style: none;
+}
+#content {
+width: 59%;
+float: left;
+border: 1px solid black;
+}
+#sidebar {
+border: 1px solid violet;
+float: left;
+width: 40%;
+}
+#footer {
+width: 100%;
+border: 1px solid black;
+float: left;
+}

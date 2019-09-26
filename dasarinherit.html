@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style type="text/css">
+    /*artinya semua turunan di body atau semua tag apapun yang di dalam body akan di ubah ukuran hurufnya menjadi 20px */
+    body{
+        font-size: 20px;
+    }
+    /*menselect div dan seluruh tag yang ber class kan satu akan di ubah warna,posisi dan di beri border,tetapi yang akan mendapatkan border adalah div itu sendiri bukan tag p class satu yang berada di dalam div tersebut*/
+        div.satu {
+            border : 1px solid black;
+            color: blue;
+            text-align: center;
+        
+        }
+        div.satu:hover{
+            border-radius: 50%;
+            animation-timing-function: 1000;
+            box-shadow: 5px 4px 5px 4px;
+        }
+        /*kontainer div yang berkelaskan "dua" akan diberikan border setebal 1 px*/
+        div.dua{
+            border: 1px solid black;
+        }
+        /*tag p yang memiliki claass dua akan di beri property border dan ber valeukan inherit yang artinya akan mendapatkan border sesuai dengan tag induknya yaitu div class dua*/
+        p.dua {
+            border : inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="satu">
+    <p class="satu">
+        Kalimat ini tanpa <em>nilai property inherit</em> css
+    </p>
+</div>
+<br />
+<div class="dua">
+    <p class="dua">
+        Kalmat ini menggunakan <em> Nilai Property Inherit</em> CSS 
+    </p>
+</div>
+</body>
+</html>

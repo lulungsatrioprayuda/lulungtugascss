@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Membuat Form</title>
+</head>
+<body>
+    <!--Method Get Untuk Mendapatkan Data, jika masih belum ada database maka data yang terdapat pada 
+    form tersebut akan pindah ke tempat url pada browser-->
+    <form action="form1.html" method="GET">
+        <!--Inputan Ini Berbentuk text, digunakan untuk menangkapdata pada form nama,alamat, dll yang membutuhkan pengisian data secara manual-->
+        Nama: <br> <input type="text" name="nama" value="Nama Anda" />
+        <br />
+        <!--Inputn ini sama seperti inputan text biasanya,namun perbedaannya adalah jika di input text biasa akan terlihat apa saja yang kita masukan.
+        tetapi input text bertipe password ini tidak, dia akan mensensor data atau text yang di tuliskan kedalamnnya untuk suatu keamanan tertentu, method ini
+        cocok di  gunakan untuk suatu inputan yang membutuhkan data sensitif-->
+        Password : <br> <input type="password" name="password"/>
+        <br />
+        <!--Input Radio, Inputan ini berupa pilihan,yang setiap pilihannya itu sudah di beri value masing masing, contoh jika di radio pertama itu diberi value
+        Laki-Laki Maka pilihan pertama itu adalah laki laki (Bukan pilihan pertama lagi),dan di bagian input ini kita tidak bisa kalau tidak memlih dari salah satu tombol-->
+        Jenis Kelamin : <br> <input type="radio" name="Jenis_Kelamin" value="Laki-Laki" checked/>
+        Laki-Laki
+        <input type="radio" name="Jenis_Kelamin" value="Perempuan" checked />
+        Perempuan
+        <br />
+        <input type="radio" name="Jenis_Kelamin" value="Tidak_Memilih" checked />
+        Tidak Memilih
+        <br />
+
+            <!--Inputan Chechbox, jenis inputan ini berisi suatu data jika bisa memilih salah satu,ataupun tidak memilihnya sama sekali, contoh kita sudah terlanjur mengisi pilihan pertama
+            dan kita tidaksengaja, kita bisa mengeklik pilihan pertama tadi untuk menghapusnya dan tidak memilih pilihan di inputan jenis checbox ini-->
+    Hobi : <input type="checkbox" name="Hobi_Baca" /> Membaca Buku
+           <input type="checkbox" name="Hobi_Nulis" /> Menulis
+            <input type="checkbox" name="Hobi_Mancing"/> Memancing
+            <br/>
+            <!--Selection ,Fungsinya sama seperti input radio atau checkb0x,yang berbeda hanyalah tempat untuk mengisi datanya yaitu menggunakan fitur seperti input text biasa,tetapi perbedaanya input select ini-
+memiliki pilihan di dalam texboxnya dan hanya bisa mengisi data sesuai dengan pilihan yang tersedia-->
+    Asal Kota : 
+    <select name="Asal_Kota" >
+        <option value="Kota Jember" selected> Jember </option>
+        <option value="Kota Bandung">Bandung</option>
+        <option value="Kota Bogor"> Bogor </option>
+    </select>
+    <br/>
+    <!--
+        Jenisnya hapir sama seperti input text biasa ,hanya saja textarea ini memiliki nilai lebih, yaitu jumlah data yang bisa di masukan kedalam 
+        texboxnya lebih banyak dan lebih panjang tergantung pada kita mengatur untuk batasnya berapa saja
+    -->
+    Komentar Anda :
+    <br/>
+    <textarea name="Komentar" cols="25" rows="6"></textarea>
+    <br/>
+    <input type="submit" value="Mulai Proses!">
+    
+    
+</form>
+</body>
+</html>
