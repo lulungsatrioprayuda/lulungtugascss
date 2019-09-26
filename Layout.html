@@ -1,0 +1,55 @@
+<!--contoh komen-->
+<!-- Materi Tentang cara integrasikan css kedalam html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Halaman BARU</title>
+    <!-- Cara Mengintergrasikan css ke html semua terganntung pada href yang terdapat di dalam tag "linknya" pastikan ekstensi dalamsebuah file css itu adalah ".css" -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--header tempat yang cocok untuk judul maupun logo suatu website-->
+    <div id="header">
+        <h1>Judul WebSite</h1>
+        <img src="background1.jpg" alt="gambar_1" width="40%" />
+    </div>
+    <div id="menu">
+        
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+    <div id="content">
+        <div id="articel_1">
+            <div id="articel_header_1">
+                <h1>Judul Articel 1</h1>
+                <h2>Sub Articel 1</h2>
+            </div>
+            <p>.. ini adalah isi dari artikerl 1..</p>
+        </div>
+        <div id="articel_2">
+                <div id="articel_header_2">
+                    <h1>Judul Articel 2</h1>
+                    <h2> Sub Articel 2</h2>
+                </div>
+                <p>Ini adalah isi dari articel 2</p>
+            </div>
+        </div>
+        <!--kontainer yang memiliki kunci unnik atau seperti di database yaitu primary key yang bernama "sidebar"-->
+  <div id="SideBar">
+      <h1>Articel Terbaru</h1>
+    <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+    </ul>
+  </div>
+  <div id="footer">
+        <p> Footer - CopyRight jti.Polije 2014</p>
+  </div>
+</body>
+</html>
